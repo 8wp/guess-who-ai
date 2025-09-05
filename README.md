@@ -21,7 +21,9 @@ pip install openai
   <li>Download the <code>guess-who-ai.py</code> file.</li>
   <li>Open the <code>guess-who-ai.py</code> file in a text editor or IDE.</li>
   <li>Create an <a href="https://platform.openai.com/settings/organization/api-keys" target="_blank" rel="noopener noreferrer">OpenAI API</a> key from the OpenAI Developer Platform.</li>
-  <li>Paste your api key into the <code>guess-who-ai.py</code> file at <code>line 5</code>, in place of <code>API_KEY</code></li>
+  <li>Paste your api key into the <code>guess-who-ai.py</code> file at <code>line 5</code>, in place of <code>API_KEY</code>.</li>
+  <li>Save the updated <code>guess-who-ai.py</code> file, and run it.</li>
+  <li>Follow the prompts on the console to play the game.</li>
  
 </ol>
 
