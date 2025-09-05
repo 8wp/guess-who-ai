@@ -2,13 +2,7 @@
 
 <h2>How it works</h2>
 
-<p>This tool is a locally hosted Python script that uses on-device OCR (Optical Character Recognition) alongside the Discord gateway 
-to enable one-time, trigger-based messaging. You define trigger-response pairs in the config file — for example, if the script 
-detects a specific piece of text on your screen, it will immediately send the corresponding predefined response to the selected 
-Discord channel. The script authenticates with your bot/user token and establishes a WebSocket connection to deliver 
-the message instantly. All setup — including trigger text, response messages, and channel selection — is handled entirely 
-through the config, making it a straightforward, end-to-end solution for automated OCR-driven responses without external 
-hosting or services.</p>
+<p>This tool is a locally hosted Python script that leverages the OpenAI API to implement a dynamic 20-questions style guessing game. The script maintains a structured conversation history, which is sent as context to the OpenAI endpoint (chat.completions.create) to generate the next question or a final guess. Each interaction is treated as a message in the conversation, allowing the model to reason over prior answers and adapt its line of questioning. The script includes logic to control when the model should make a guess, and all API calls are made in real-time to OpenAI’s gpt-4o-mini model. The architecture is fully local, with no external orchestration — the script handles question generation, history tracking, and response evaluation end-to-end.</p>
 
 <h2>Demonstration</h2>
 
@@ -19,11 +13,17 @@ W.I.P
 Run the following command to install all required packages:
 
 ```sh
-
+pip install openai
 ```
 <h2>How to use</h2>
 
 <ol>
+  <li>Download the <code>guess-who-ai.py</code> file.</li>
+  <li>Open the <code>guess-who-ai.py</code> file in a text editor or IDE.</li>
+  <li>Create an <a href="https://platform.openai.com/settings/organization/api-keys" target="_blank" rel="noopener noreferrer">OpenAI API</a> key from the OpenAI Developer Platform.</li>
+  <li>Paste your api key into the <code>guess-who-ai.py</code> file at <code>line 5</code>, in place of <code>API_KEY</code></li>
  
-<h2>Disclaimer</h2>
+</ol>
+
+
 
